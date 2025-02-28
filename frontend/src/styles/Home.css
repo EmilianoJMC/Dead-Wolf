@@ -1,0 +1,13 @@
+.home {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.home h1 {
+    color: #333;
+}
+
+.home p {
+    color: #666;
+}
