@@ -7,7 +7,7 @@ django.setup()
 
 from music_app.models import Album, Music
 
-MUSICS_PATH = r""C:\Users\Miza\Downloads\Dead Wolf""
+MUSICS_PATH = r"C:\Users\Miza\Downloads\Dead Wolf"
 
 def load_musics():
     for album_name in os.listdir(MUSICS_PATH):
