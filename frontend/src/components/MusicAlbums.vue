@@ -19,15 +19,12 @@ export default {
       albums: [],
     };
   },
-created() {
-  axios.get('http://localhost:8000/api/albums/')
-    .then(response => {
-      this.albums = response.data;
-    })
-    .catch(error => {
-      console.error("There was an error fetching the albums:", error);
-    });
-},
+  created() {
+    axios.get('http://localhost:8000/api/albums/')
+      .then(response => {
+        this.albums = response.data;
+      });
+  },
   methods: {
     selectAlbum(album) {
       this.$router.push(`/albums/${album.id}`);
